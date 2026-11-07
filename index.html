@@ -48,6 +48,9 @@
       backdrop-filter: blur(18px);
       animation: rise .9s cubic-bezier(.2,.8,.2,1) both;
     }
+    nav { display: flex; justify-content: center; gap: 1.1rem; }
+    nav a { color: #c8c3d9; font-size: .88rem; font-weight: 650; text-decoration: none; transition: color .2s ease; }
+    nav a:hover, nav a:focus-visible { color: #fff; }
     .eyebrow {
       display: inline-flex;
       align-items: center;
@@ -104,6 +107,11 @@
   <div class="orb one" aria-hidden="true"></div>
   <div class="orb two" aria-hidden="true"></div>
   <main>
+    <nav aria-label="Main navigation">
+      <a href="index.html" aria-current="page">Home</a>
+      <a href="about.html">About</a>
+      <a href="contact.html">Contact</a>
+    </nav>
     <div class="eyebrow"><span class="spark" aria-hidden="true">✦</span> A tiny beginning</div>
     <h1>Hello,<span>world!</span></h1>
     <p>A little page with a lot of possibility. Here’s to whatever you build next.</p>
