@@ -1,0 +1,39 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#101021">
+  <title>Gallery · Hello, world!</title>
+  <style>
+    :root { color-scheme: dark; font-family: Inter, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif; color: #f7f4ff; background: #101021; }
+    * { box-sizing: border-box; }
+    body { min-height: 100vh; margin: 0; padding: 2rem; display: grid; place-items: center; background: radial-gradient(ellipse at 15% 8%, #7c3aed3d, transparent 37%), radial-gradient(ellipse at 88% 88%, #06b6d42e, transparent 38%), #101021; }
+    main { width: min(100%, 900px); padding: clamp(2rem, 7vw, 4.75rem); border: 1px solid #ffffff20; border-radius: 30px; background: linear-gradient(145deg, #ffffff11, #ffffff05); box-shadow: 0 30px 100px #0007, inset 0 1px #ffffff17; backdrop-filter: blur(18px); animation: rise .7s ease both; }
+    nav { display: flex; flex-wrap: wrap; gap: 1.1rem; margin-bottom: 3.5rem; } nav a { color: #c8c3d9; font-size: .88rem; font-weight: 650; text-decoration: none; } nav a:hover, nav a:focus-visible, nav a[aria-current] { color: #fff; }
+    .eyebrow { color: #f5c76a; font-size: .76rem; font-weight: 700; letter-spacing: .14em; text-transform: uppercase; }
+    h1 { margin: .7rem 0 .9rem; font-size: clamp(3rem, 9vw, 5.8rem); line-height: 1; letter-spacing: -.07em; } h1 span { color: transparent; background: linear-gradient(100deg, #c4b5fd, #f0abfc, #67e8f9); background-clip: text; -webkit-background-clip: text; }
+    .intro { max-width: 42rem; color: #b9b6c9; font-size: 1.1rem; line-height: 1.7; }
+    .grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 1rem; margin-top: 2.5rem; }
+    article { min-height: 13rem; padding: 1.35rem; display: flex; flex-direction: column; justify-content: end; border: 1px solid #ffffff1f; border-radius: 18px; background: linear-gradient(145deg, #ffffff16, #ffffff06); transition: transform .2s ease, border-color .2s ease; } article:hover { transform: translateY(-5px); border-color: #d8b4fe80; }
+    article:nth-child(1) { background: linear-gradient(150deg, #8b5cf648, #ffffff08 62%); } article:nth-child(2) { background: linear-gradient(150deg, #ec489943, #ffffff08 62%); } article:nth-child(3) { background: linear-gradient(150deg, #06b6d443, #ffffff08 62%); }
+    .number { margin-bottom: auto; color: #fff8; font-size: .8rem; font-weight: 750; letter-spacing: .12em; } h2 { margin: 0 0 .35rem; font-size: 1.2rem; } article p { margin: 0; color: #c1bdcf; line-height: 1.5; font-size: .92rem; }
+    .cta { display: inline-block; margin-top: 2rem; color: #a5f3fc; font-weight: 700; text-decoration: none; } .cta:hover { color: #fff; }
+    @keyframes rise { from { opacity: 0; transform: translateY(16px); } to { opacity: 1; transform: none; } } @media (max-width: 650px) { .grid { grid-template-columns: 1fr; } article { min-height: 10rem; } }
+  </style>
+</head>
+<body>
+  <main>
+    <nav aria-label="Main navigation"><a href="index.html">Home</a><a href="about.html">About</a><a href="gallery.html" aria-current="page">Gallery</a><a href="contact.html">Contact</a></nav>
+    <div class="eyebrow">✦ A visual collection</div>
+    <h1>Moments worth <span>keeping.</span></h1>
+    <p class="intro">A small collection of ideas, details, and bright sparks. Replace these cards with your own photos, work, or favorite memories.</p>
+    <section class="grid" aria-label="Gallery highlights">
+      <article><span class="number">01</span><h2>First light</h2><p>Early color and a calm beginning.</p></article>
+      <article><span class="number">02</span><h2>Common ground</h2><p>Little moments that bring people together.</p></article>
+      <article><span class="number">03</span><h2>Field notes</h2><p>Small discoveries saved along the way.</p></article>
+    </section>
+    <a class="cta" href="contact.html">Have a project in mind? Say hello ↗</a>
+  </main>
+</body>
+</html>
